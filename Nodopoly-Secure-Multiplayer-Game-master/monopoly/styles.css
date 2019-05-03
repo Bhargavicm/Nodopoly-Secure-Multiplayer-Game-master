@@ -38,9 +38,9 @@ td {
 #moneybarwrap {
 	position: absolute;
 	min-width: 135px;
-	top: 0px;
+	top: 50px;
 	left: 970px;
-	right: 0px;
+	right: 150px;
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -85,7 +85,7 @@ td {
 	position: absolute;
 	z-index: 9;
 	top: 250px;
-	left: 250px;
+	left: 950px;
 	border: 2px solid black;
 	padding: 10px;
 	display: none;
@@ -353,6 +353,7 @@ td {
 	opacity: 0.5;
 	display: none;
 	z-index: 10;
+	
 }
 
 #popupdrag {
@@ -594,12 +595,12 @@ td {
 }
 
 .board-top {
-	width: 72px;
+	width: 62px;
 	height: 102px;
 }
 
 .board-bottom {
-	width: 72px;
+	width: 62px;
 	height: 102px;
 }
 
@@ -651,13 +652,13 @@ td {
 }
 
 .moneybarcell {
-	width: 83px;
-	min-width: 83px;
+	width: 150px;
+	min-width: 150px;
 }
 
 .moneybararrowcell {
-	background: white;
-	width: 30px;
+	background: rgb(226, 94, 94);
+	width: 50px;
 	border: none;
 	text-align: right;
 	padding: 0px;

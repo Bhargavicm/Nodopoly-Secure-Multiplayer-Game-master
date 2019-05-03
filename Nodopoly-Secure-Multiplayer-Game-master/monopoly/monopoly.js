@@ -2956,10 +2956,12 @@ window.onload = function() {
 		s = square[i];
 
 		currentCell = document.getElementById("cell" + i);
+		currentCell.style.backgroundColor = s.color;//final change
 
 		currentCellAnchor = currentCell.appendChild(document.createElement("div"));
 		currentCellAnchor.id = "cell" + i + "anchor";
 		currentCellAnchor.className = "cell-anchor";
+		currentCellAnchor.textContent = s.pricetext;
 
 		currentCellPositionHolder = currentCellAnchor.appendChild(document.createElement("div"));
 		currentCellPositionHolder.id = "cell" + i + "positionholder";
@@ -2970,6 +2972,9 @@ window.onload = function() {
 		currentCellName.id = "cell" + i + "name";
 		currentCellName.className = "cell-name";
 		currentCellName.textContent = s.name;
+		
+
+
 
 		if (square[i].groupNumber) {
 			currentCellOwner = currentCellAnchor.appendChild(document.createElement("div"));
@@ -2989,6 +2994,7 @@ window.onload = function() {
 	document.getElementById("enlarge38token").innerHTML += '<img src="images/tax_icon.png" height="60" width="70" alt="" style="position: relative; top: -20px;" />';
 
 	corrections();
+	
 
 	// Jail corrections
 	$("<div>", {id: "jailpositionholder" }).appendTo("#jail");
@@ -3005,7 +3011,7 @@ window.onload = function() {
 	var drag, dragX, dragY, dragObj, dragTop, dragLeft;
 
 	$(".cell-position-holder, #jail").on("mouseover", function(){
-		$("#" + this.enlargeId).show();
+		//$("#" + this.enlargeId).show();
 
 	}).on("mouseout", function() {
 		$("#" + this.enlargeId).hide();
