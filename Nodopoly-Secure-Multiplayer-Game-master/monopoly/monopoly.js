@@ -2689,7 +2689,7 @@ game_ns._draw_setup.draw_player_wrappers = function(max) {
 	content += "<div id='player"+i+"wrap' data-id='"+i+"' class='player-wrap'>";
 	content += "Player "+i+": ";
 	if(count==1)
-	content += "<input type='text' disabled='disabled' class='player-name' title='Player name' maxlength='16' value='alice1@gmail.com' /> ";
+	content += "<input type='text' disabled='disabled' class='player-name' title='Player name' maxlength='16' value='alice1@gmail.com'/> ";
 
 	if(count==2)
 	content += "<input type='text'  disabled='disabled' class='player-name' title='Player name' maxlength='16' value='bob1@gmail.com' /> ";

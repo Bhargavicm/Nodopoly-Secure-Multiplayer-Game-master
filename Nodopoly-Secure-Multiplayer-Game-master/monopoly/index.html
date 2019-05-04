@@ -9,12 +9,14 @@
 	<!-- <script type="text/javascript" src="newyorkcityedition.js"></script> -->
 	<script type="text/javascript" src="session.js"></script>
 	<script type="text/javascript" src="monopoly.js"></script>
+	<script type="text/javascript" src="rolldice.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
-<body background="monopoly/monopoly.jpg">  
+<body>  
 	<div id="popupbackground"></div>
 	<div id="popupwrap">
 		<div id="popup">
@@ -177,74 +179,77 @@
 			<table>
 				<tr id="moneybarrow0" class="money-bar-row">
 
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p0arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p0moneybar" class="moneybarcell">
 						<div><span id="p0moneyname" >Player 0</span>:</div>
 						<div>$<span id="p0money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow1" class="money-bar-row">
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p1arrow" class="money-bar-arrow" alt=">"/></td>
+					<td class="moneybararrowcell">Player 1</td>
 					<td id="p1moneybar" class="moneybarcell">
 						<div><span id="p1moneyname" >Player 1</span>:</div>
 						<div>$<span id="p1money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow2" class="money-bar-row">
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p2arrow" class="money-bar-arrow" alt=">" /></td>
+					<td class="moneybararrowcell">Player 2</td>
 					<td id="p2moneybar" class="moneybarcell">
 						<div><span id="p2moneyname" >Player 2</span>:</div>
 						<div>$<span id="p2money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow3" class="money-bar-row">
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p3arrow" class="money-bar-arrow" alt=">" /></td>
+					<td class="moneybararrowcell"><img src="user.png" id="p3arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p3moneybar" class="moneybarcell">
 						<div><span id="p3moneyname" >Player 3</span>:</div>
 						<div>$<span id="p3money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow4" class="money-bar-row">
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p4arrow" class="money-bar-arrow" alt=">" /></td>
+					<td class="moneybararrowcell"><img src="user.png" id="p4arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p4moneybar" class="moneybarcell">
 						<div><span id="p4moneyname" >Player 4</span>:</div>
 						<div>$<span id="p4money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow5" class="money-bar-row">
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p5arrow" class="money-bar-arrow" alt=">" /></td>
+					<td class="moneybararrowcell"><img src="user.png" id="p5arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p5moneybar" class="moneybarcell">
 						<div><span id="p5moneyname" >Player 5</span>:</div>
 						<div>$<span id="p5money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow6" class="money-bar-row">
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p6arrow" class="money-bar-arrow" alt=">" /></td>
+					<td class="moneybararrowcell"><img src="user.png" id="p6arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p6moneybar" class="moneybarcell">
 						<div><span id="p6moneyname" >Player 6</span>:</div>
 						<div>$<span id="p6money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow7" class="money-bar-row">
-					<td class="moneybararrowcell"><img src="images/arrow.jpg" id="p7arrow" class="money-bar-arrow" alt=">" /></td>
+					<td class="moneybararrowcell"><img src="user.png" id="p7arrow" class="money-bar-arrow" alt=">" /></td>
 					<td id="p7moneybar" class="moneybarcell">
 						<div><span id="p7moneyname" >Player 7</span>:</div>
 						<div>$<span id="p7money">1500</span></div>
 					</td>
 				</tr>
 				<tr id="moneybarrow8">
-					<td style="border: none;" class="moneybararrowcell">&nbsp;</td>
-					<td style="border: none;">
-						<input type="button" id="viewstats" value="View stats" title="View a pop-up window that shows a list of each player's properties." />
+					
+					<td style="border: none;" colspan="2">
+						<input type="button" id="viewstats" value="View stats" title="View a pop-up window that shows a list of each player's properties." style="background-color: chocolate;width: 80px;"/>
 					</td>
 				</tr>
 			</table>
 		</div>
 	</div>
+<br/>
 
+<div style="align-items: center">
 	<div id="setup">
-		<div style="margin-bottom: 20px;">
-			Select number of players.
+		<div style="text-align: center;font-size: 40px;margin-bottom: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:saddlebrown"><b>Selection of the players as well as the color of dice</b></div>
+		<div style="margin-bottom: 20px;text-align: center;font-size: 25px">
+			
+			<b>How many players for this game?</b>
 			<select id="playernumber" title="Select the number of players for the game.">
 				<option selected="selected">2</option>
 				<option>3</option>
@@ -256,21 +261,24 @@
 			</select>
 		</div>
 
-		<div id="player-wrappers">
+		<div id="player-wrappers" style="text-align: center;font-size: 25px">
 		</div>
 
-		<div style="margin: 20px 0px;">
-			<input type="button" value="Start Game" onclick="game_ns.setup();" title="Begin playing." />
+		<div style="margin: 20px 0px;text-align: center;">
+			<input type="button" value="Start Game" onclick="game_ns.setup();" title="Begin playing." class="button"/>
+	
 		</div>
 
-		<div id="noF5">Note: Refreshing this page or navigating away from it may end your game without warning.</div>
+		<div id="noF5" style="text-align: center;font-size: 20px"><b>Note: Refreshing this page or navigating away from it may end your game without warning.</b></div>
 	</div>
+</div>
 
 	<div id="control">
 		<table>
 			<tr>
 				<td style="text-align: left; vertical-align: top; border: none;">
-					<div id="menu">
+					<div id="menu" style="text-align: center"> 
+							<div style="text-align: center;font-size: 20px;color: brown"><b>Actions</b></div>
 						<table id="menutable" cellspacing="0">
 							<tr>
 								<td class="menu-item" id="buy-menu-item">
@@ -288,8 +296,10 @@
 							</tr>
 						</table>
 					</div>
-
-					<div id="buy">
+					<br/>
+					<br/>
+<br/>
+					<div id="buy"><div style="text-align: center;font-size: 20px;color: brown"><b>Game History</b></div>
 						<div id="alert"></div>
 						<div id="landed"></div>
 					</div>
@@ -318,8 +328,8 @@
 			</tr><tr>
 				<td colspan="2" style="border: none">
 					<div style="padding-top: 8px;">
-						<input type="button" id="nextbutton" title="Roll the dice and move your token accordingly." value="Roll Dice"/>
-						<input type="button" id="resignbutton" title="If you cannot pay your debt then you must resign from the game." value="Resign" onclick="game.resign();" />
+						<input type="button" id="nextbutton" title="Roll the dice and move your token accordingly." value="Roll Dice" class="button"/>
+						<input type="button" id="resignbutton" title="If you cannot pay your debt then you must resign from the game." value="Resign" onclick="game.resign();" class="button"/>
 					</div>
 				</td>
 			</tr>

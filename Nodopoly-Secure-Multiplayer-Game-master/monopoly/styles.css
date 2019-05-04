@@ -1,5 +1,6 @@
 body {
-	background: #E6E6FA;
+	background:#bdcebe;
+	/*background-image: url("monopoly.jpg");*/
 	margin: 0px;
 	min-width: 1075px;
 }
@@ -10,6 +11,49 @@ td {
 	border: 1px solid black;
 	text-align: center;
 }
+
+/* added by KP */
+.button {
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+/* ended by KP */
 
 #setup {
 	display: none;
@@ -38,9 +82,9 @@ td {
 #moneybarwrap {
 	position: absolute;
 	min-width: 135px;
-	top: 50px;
-	left: 970px;
-	right: 150px;
+	top: 600px;
+	left: 350px;
+	/*right: 150px;*/
 	-webkit-user-select: none;
 	user-select: none;
 }
@@ -85,11 +129,11 @@ td {
 	position: absolute;
 	z-index: 9;
 	top: 250px;
-	left: 950px;
+	left: 250px;
 	border: 2px solid black;
 	padding: 10px;
 	display: none;
-	background-color: white;
+	background-color: #ffef96;
 }
 
 #quickstats {
@@ -350,6 +394,7 @@ td {
 	top: 0px;
 	left: 0px;
 	background-color: #000000;
+	
 	opacity: 0.5;
 	display: none;
 	z-index: 10;
@@ -660,7 +705,7 @@ td {
 	background: rgb(226, 94, 94);
 	width: 50px;
 	border: none;
-	text-align: right;
+	text-align: center;
 	padding: 0px;
 }
 
